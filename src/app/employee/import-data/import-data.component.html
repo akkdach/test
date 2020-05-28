@@ -1,0 +1,151 @@
+<section class="content">
+    <div class="container-fluid">
+        <div class="block-header">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul class="breadcrumb breadcrumb-style ">
+                        <li class="breadcrumb-item">
+                            <h4 class="page-title">พนักงาน</h4>
+                        </li>
+                        <li class="breadcrumb-item bcrumb-1">
+                            <a routerLink="/employee/import-data">
+                                <i class="fas fa-home"></i> ข้อมูลพนักงาน</a>
+                        </li>
+                        <li class="breadcrumb-item bcrumb-2">
+                            <a  onClick="return false;">นำเข้าข้อมูล</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Input -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>นำเข้าข้อมูลสัญญา</h2>
+                    </div>
+                    <div class="body">
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                            
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="card-inside-title">เลือกไฟล์</label>
+                                            <input type="file" (change)="onFileChange($event)" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <button (click)="postImport()" class="btn btn-small btn-primary">นำเข้าทันที</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div id="output"></div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>นำเข้าข้อมูลพนักงาน</h2>
+                    </div>
+                    <div class="body">
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                            
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="card-inside-title">เลือกไฟล์</label>
+                                            <input type="file" (change)="onCustFileChange($event)" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <button (click)="postCustImport()" class="btn btn-small btn-primary">นำเข้าทันที</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div id="outputCust"></div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>นำเข้าข้อมูลผู้ค้ำประกัน</h2>
+                    </div>
+                    <div class="body">
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                            
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="card-inside-title">เลือกไฟล์</label>
+                                            <input type="file" (change)="onWarFileChange($event)" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <button (click)="postWarImport()" class="btn btn-small btn-primary">นำเข้าทันที</button>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>นำเข้าข้อมูลรถ</h2>
+                    </div>
+                    <div class="body">
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                            
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="card-inside-title">เลือกไฟล์</label>
+                                            <input type="file" (change)="onCarFileChange($event)" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <button (click)="postCarImport()" class="btn btn-small btn-primary">นำเข้าทันที</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div id="outputCust"></div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #END# Input -->
+    </div>
+</section>
